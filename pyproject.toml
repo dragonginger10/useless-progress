@@ -1,0 +1,21 @@
+[build-system]
+requires=["setuptools>=42"]
+build-backend="setuptools.build_meta"
+
+[project]
+name = "progbar"
+description = "creates a useless progress bar"
+version = "1.0"
+# readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+  "tqdm"
+]
+
+
+[project.scripts]
+progbar = "progbar:main"
+
+[tool.setuptools]
+packages = ["progbar"]
+include-package-data = true
