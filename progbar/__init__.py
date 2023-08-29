@@ -19,7 +19,7 @@ def main():
         bar = tqdm(
                 range(total_steps + 1), 
                 desc="place holder", 
-                ncols=200,
+                ncols=100,
                 colour="green",
                 postfix="",
                 bar_format = '{l_bar}{bar}|'
